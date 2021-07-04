@@ -1,13 +1,119 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(230, 230, 230);
+  font-family: 'Nunito', sans-serif;
+  padding-top: 0;
+  overflow-y: hidden;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.btn-save-contact {
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  max-width: 300px;
+  width: fill;
+  margin: 10px auto;
+  grid-column: span 6;
+}
+
+.btn-add-contact {
+  background-color: #59f796;
+  color: white;
+  border: none;
+  width: fill;
+  font-size: 24px;
+  font-family: 700px;
+  margin: 0;
+}
+
+.btn-show-contact {
+  background-color:rgb(250, 250, 250);
+  width: 98%;
+  margin: 0 auto;
+  font-weight: 700;
+  padding: 3px;
+  border: none;
+}
+
+.btn-show-contact:hover {
+  background-color: lightcyan;
+  transition: 0.5s;
+}
+
+.container {
+  background-color: #c4dbff;
+  max-width: 610px;
+  margin: 0 auto;
+  border: 3px solid lightblue;
+  border-bottom: 1px solid lightblue;
+}
+
+.contact {
+  background-color: rgb(250, 250, 250);
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 0px 10px;
+}
+
+.contact-list {
+  background-color: #e3edff;
+  overflow-y: scroll;
+  max-height: 280px;
+}
+
+.contact-form {
+  background-color: #e3edff;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  gap: 10px 0;
+  padding: 10px;
+  max-width: 510px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.header {
+  text-align: center;
+}
+
+.contact-label {
+  font-weight: bold;
+}
+
+.contact-form label{
+  grid-column: span 1;
+}
+
+.contact-form input{
+  grid-column: span 2;
+  margin-right: 8px;
+}
+
+.name {
+  text-align: center;
+}
+
+
+/* scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e3edff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React, { useState } from 'react';
+import Contact from './Contact';
+import AddContact from './AddContact';
 function App() {
+  const [contacts,setContacts] = useState([])
+  const [showAddContactForm,setshowAddContactForm] = useState(false);
+
+  const toggleAddContactForm = () => setshowAddContactForm(!showAddContactForm)
+
+  const onAddContact = (contact) => {
+    setContacts([...contacts,contact]);
+  }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="header">Contact</h1>
+      <input type="text" placeholder="Search"/>
+
+      <div class="contact-list">
+          <Contact contacts={contacts}/>
+      </div>
+
+      {showAddContactForm && <AddContact onAddContact={onAddContact} showAddContactForm={toggleAddContactForm}/>}
+      
+
+      <button className="btn-add-contact" onClick={toggleAddContactForm}>+</button>
     </div>
   );
 }

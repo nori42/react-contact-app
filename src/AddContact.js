@@ -14,8 +14,10 @@ const AddContact = ({ onAddContact, showAddContactForm}) => {
         if(name =='' || number =='') return;
 
         setId(Math.floor(Math.random()*999))
+        
+        const contactDetail = {name,number,email,facebook,id}
 
-        onAddContact({name,number,email,facebook,id})
+        onAddContact(contactDetail)
 
         setName('')
         setNumber('')
@@ -35,7 +37,7 @@ const AddContact = ({ onAddContact, showAddContactForm}) => {
             <input type="text" value={email} placeholder="Email" onChange={(e) => setEmail(e.target.value)}/>
             <label>Facebook:</label>
             <input type="text" value={facebook} placeholder="Facebook" onChange={(e) => setFacebook(e.target.value)}/>
-            <button className="btn-save" onClick={(createContact)}>Save</button>
+            <button className="btn-save-contact" onClick={(createContact)}>Save</button>
         </form>
     );
 }
