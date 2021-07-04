@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-contact-app/static/css/main.7d180cbf.chunk.css",
+    "main.js": "/react-contact-app/static/js/main.c77378bf.chunk.js",
+    "main.js.map": "/react-contact-app/static/js/main.c77378bf.chunk.js.map",
+    "runtime-main.js": "/react-contact-app/static/js/runtime-main.f1dfbd50.js",
+    "runtime-main.js.map": "/react-contact-app/static/js/runtime-main.f1dfbd50.js.map",
+    "static/js/2.37698f02.chunk.js": "/react-contact-app/static/js/2.37698f02.chunk.js",
+    "static/js/2.37698f02.chunk.js.map": "/react-contact-app/static/js/2.37698f02.chunk.js.map",
+    "static/js/3.ca6071e3.chunk.js": "/react-contact-app/static/js/3.ca6071e3.chunk.js",
+    "static/js/3.ca6071e3.chunk.js.map": "/react-contact-app/static/js/3.ca6071e3.chunk.js.map",
+    "index.html": "/react-contact-app/index.html",
+    "static/css/main.7d180cbf.chunk.css.map": "/react-contact-app/static/css/main.7d180cbf.chunk.css.map",
+    "static/js/2.37698f02.chunk.js.LICENSE.txt": "/react-contact-app/static/js/2.37698f02.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/react-contact-app/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f1dfbd50.js",
+    "static/js/2.37698f02.chunk.js",
+    "static/css/main.7d180cbf.chunk.css",
+    "static/js/main.c77378bf.chunk.js"
+  ]
+}
